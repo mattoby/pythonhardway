@@ -1,0 +1,80 @@
+
+# getting input from terminal
+print "How old are you?",
+age = raw_input()
+
+# use on files:
+close, read, readline, truncate (empties the file), write("stuff")
+
+if A:
+    #bla
+elif B:
+    #bla 2
+else:
+    #blabla
+
+x = 10
+9 < x < 11 # this will evaluate.
+# or:
+x in range(1,10)  
+
+fruit = ['a','b','c']
+for f in fruit:
+    print "bla bla %s" % fruit 
+    
+exit(0) % exits with no error. exit(1) exits with error
+
+for i in range(len(a)):
+or:
+for i in enumerate(a):
+range(10) % gives list of [0, 1, ... 9]
+
+# try except finally grammar:
+def divide(x, y):
+...     try:
+...         result = x / y
+...     except ZeroDivisionError:
+...         print "division by zero!"
+...     else:
+...         print "result is", result
+...     finally:
+print "executing finally clause"
+ 
+# commands:
+for	Loop over a collection of things.	for X in Y: pass
+if	If condition.	if: X; elif: Y; else: J
+and	% Logical and.	True and False == False
+break	Stop this loop right now.	while True: break
+def	Define a function.	def X(): pass
+elif	Else if condition.	if: X; elif: Y; else: J
+else	Else condition.	if: X; elif: Y; else: J
+exec	Run a string as Python.	exec 'print "hello"'
+from	Importing specific parts of a module.	import X from Y
+global	Declare that you want a global variable.	global X
+import	Import a module into this one to use.	import os
+in	Part of for-loops. Also a test of X in Y.	for X in Y: pass also 1 in [1] == True
+is	tests if the names point to the same object. a is a == True, but 1000 is 10**3 == False (since they do not point to the same object).
+not	Logical not.	not True == False
+or	Logical or.	True or False == True
+pass	This block is empty.	def empty(): pass
+print	Print this string.	print 'this string'
+return	Exit the function with a return value.	def X(): return Y
+try	Try this block, and if exception, go to except.	try: pass % try: block, except ErrorType as e: "print something about error"
+raise	Raise an exception when things go wrong.	raise ValueError("No")
+while	While loop.	while X: pass
+
+# need to look up:
+as	% Part of the with-as statement.	with X as Y: pass (also except as? others?)
+assert	Assert (ensure) that something is true.	assert False, "Error!"
+class	Define a class.	class Person(object)
+continue	Don't process more of the loop, do it again.	while True: continue
+del	Delete from dictionary.	del X[Y]
+except	If an exception happens, do this.	except ValueError, e: print e
+finally	Exceptions or not, finally do this no matter what.	finally: pass
+lambda	Create a short anonymous function.	s = lambda y: y ** y; s(3)
+with	With an expression as a variable do.	with X as Y: pass
+yield	Pause here and return to caller.	def X(): yield Y; X().next()
+
+
+
+
